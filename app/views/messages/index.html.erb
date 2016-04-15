@@ -15,10 +15,10 @@
 </div>
 
 <%= form_for(@message) do |f| %>
-  名前:
+  <font color="green"><b>名前:</b></font>
   <%= f.text_field :name %>
   
-  内容:
-  <%= f.text_field :body %>
-  <%= f.submit %>
+  <font color="blue"><b>内容:</b></font>
+  <%= f.text_area :body %>
+  <%= f.submit class: "btn btn-sm btn-success btn-lg active" %>
 <% end %>
