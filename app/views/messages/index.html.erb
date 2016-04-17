@@ -14,11 +14,18 @@
   </div>
 </div>
 
+<div class="form-horizontal" role="form" >
 <%= form_for(@message) do |f| %>
-  <font color="green"><b>名前:</b></font>
-  <%= f.text_field :name %>
+  <div class="form-group">
+    <p>名前:</p>
+    <%= f.text_field :name %>
+  </div>
   
-  <font color="blue"><b>内容:</b></font>
-  <%= f.text_area :body %>
+  <div class="form-group">
+    <p>内容:</p>
+    <%= f.text_area :body %>
+  </div>
+
   <%= f.submit class: "btn btn-sm btn-success btn-lg active" %>
 <% end %>
+</div>
